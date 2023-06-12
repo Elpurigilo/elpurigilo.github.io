@@ -1,0 +1,64 @@
+
+.foot {
+	width: 100%;
+	height: 350px;
+	background-color: rgb(51, 51, 51);
+	padding-top: 50px;
+}
+
+.page-head {
+	margin: 0 auto;
+	width: 990px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.explain {
+	color:#7f7f7f;
+}
+
+.download-link {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+	width: 270px;
+}
+
+.download-link > div {
+	width: 60px;
+	font-size: 6px;
+	color: #7f7f7f;
+}
+
+.friend-link {
+	display: flex;
+	width: 320px;
+	justify-content: space-between;
+}
+
+.friend-link>div {
+	margin-top: 50px;
+}
+
+.friend-link ul li {
+	list-style: none;
+	font-size: 10px;
+	margin-top: 5px;
+}
+
+.friend-link ul li a {
+    text-decoration:none;
+	color: #7f7f7f;
+}
+
+
+.about {
+	width: 990px;
+	text-align: center;
+	margin: 30px auto;
+}
+
+.last {
+	font-size: 7px;
+	color:#7f7f7f;
+}

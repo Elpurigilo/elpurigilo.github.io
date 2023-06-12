@@ -1,293 +1,767 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  
-  
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
-    
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicWebsize</title>
+    <link rel="stylesheet" href="css/control-bar.css">
+    <link rel="stylesheet" href="css/sc-photo.css">
 
-  
-  
-<link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/head-bar-style.css">
+    <link rel="stylesheet" href="css/foot.css">
+    <link rel="stylesheet" href="css/main-page.css">
 
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/all-artist-list.css">
+    <link rel="stylesheet" href="css/hot-album-list.css">   
+    <link rel="stylesheet" href="css/album-list.css">
+    <link rel="stylesheet" href="css/mv-list.css">
 
-  
-  
-<meta name="generator" content="Hexo 6.3.0"></head>
+    <link rel="stylesheet" href="css/login.css">
+
+
+</head>
 
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
+    <!-- 顶栏 -->
+    <div class="navbar">
+        <h2>Music</h2>
+        <div class="search-bar" id="search-bar">
+            <a href="#"><img src="img/search.png"></a>
+            <input type="text" placeholder="搜索歌曲/歌手/专辑" id="search-input">
+        </div>
+        <button id="btn-login">登录</button>
+        <label id="nickname">nickname</label>
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-        
-          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
-        
-        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
+    
+    <div class="op-bar">
+        <div class="op">
+            <ul>
+                <li><a href="#" aria-checked="true" class="nav_checked" ptr="main_page"> 首页</a></li>
+                <li><a href="#" class="nav_checked" ptr="main_artist"> 歌手</a></li>
+                <li><a href="#" class="nav_checked" ptr="hot-album-list"> 歌单</a></li>
+                <li><a href="#" class="nav_checked" ptr="album"> 专辑</a></li>
+                <li><a href="#" class="nav_checked" ptr="mv-list"> MV </a></li>
+            </ul>
+        </div>
     </div>
-  </div>
-</header>
 
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-hello-world-1" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/06/12/hello-world-1/" class="article-date">
-  <time class="dt-published" datetime="2023-06-12T03:28:51.000Z" itemprop="datePublished">2023-06-12</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/06/12/hello-world-1/">hello world</a>
-    </h1>
-  
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        
-      
+    <!-- 首页 -->
+    <div id="main_page">
+        <div class="head-area">
+            <div class="head-picture">
+                <ul>
+                    <li><img src="img/head08.jpg" alt=""></li>
+                    <li><img src="img/head02.jpg" alt=""></li>
+                    <li><img src="img/head03.jpg" alt=""></li>
+                    <li><img src="img/head04.jpg" alt=""></li>
+                    <li><img src="img/head05.jpg" alt=""></li>
+                    <li><img src="img/head06.jpg" alt=""></li>
+                    <li><img src="img/head07.jpg" alt=""></li>
+                    <li><img src="img/head08.jpg" alt=""></li>
+                </ul>
+            </div>
+        </div>
+        <label id="label-title">精选歌单</label>
+        <div class="row-album-list">
+            <div class="cl-album">
+                <a href="#" class="album-icon"><img src="img/album03.jpg" alt=""></a>
+                <a href="#" class="album-describe">光阴流年，时光从不等任何人长大</a>
+                <div class="album-play-count">
+                    <a href="#" ><img src="img/播放-2.png" alt=""></a>
+                    <label>114万</label>
+                </div>
+            </div>
+            <div class="cl-album">
+                <a href="#" class="album-icon"><img src="img/album03.jpg" alt=""></a>
+                <a href="#" class="album-describe">光阴流年，时光从不等任何人长大</a>
+                <div class="album-play-count">
+                    <a href="#" ><img src="img/播放-2.png" alt=""></a>
+                    <label>514万</label>
+                </div>
+            </div>
+            <div class="cl-album">
+                <a href="#" class="album-icon"><img src="img/album03.jpg" alt=""></a>
+                <a href="#" class="album-describe">光阴流年，时光从不等任何人长大</a>
+                <div class="album-play-count">
+                    <a href="#" ><img src="img/播放-2.png" alt=""></a>
+                    <label>1919万</label>
+                </div>
+            </div>
+            <div class="cl-album">
+                <a href="#" class="album-icon"><img src="img/album03.jpg" alt=""></a>
+                <a href="#" class="album-describe">光阴流年，时光从不等任何人长大</a>
+                <div class="album-play-count">
+                    <a href="#" ><img src="img/播放-2.png" alt=""></a>
+                    <label>810万</label>
+                </div>
+            </div>
+        </div>
+        <label id="label-title">热门歌手</label>
+        <div class="row-artist-list">
+            <div class="cl-artist">
+                <a href="#"><img src="img/artist01.jpg" alt=""></a>
+                <a href="#" id="artist-name"><label >Taylor Swift</label></a>
+            </div>
+            <div class="cl-artist">
+                <a href="#"><img src="img/artist02.jpg" alt=""></a>
+                <a href="#" id="artist-name"><label >Justin Bieber</label></a>
+            </div>
+            <div class="cl-artist">
+                <a href="#"><img src="img/artist03.jpg" alt=""></a>
+                <a href="#" id="artist-name"><label >Michael Jackson</label></a>
+            </div>
+            <div class="cl-artist">
+                <a href="#"><img src="img/artist04.jpg" alt=""></a>
+                <a href="#" id="artist-name"><label >AURORA</label></a>
+            </div>
+        </div>
     </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/06/12/hello-world-1/" data-id="clisdl3w10001s4ufez382s26" data-title="hello world" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
 
-
-
-  
-    <article id="post-NAND" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/06/12/NAND/" class="article-date">
-  <time class="dt-published" datetime="2023-06-12T02:40:07.000Z" itemprop="datePublished">2023-06-12</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/06/12/NAND/">NAND</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        
-      
+    <!-- 歌单 -->
+    <div id="hot-album-list">
+        <label id="label-title">热门榜</label>
+        <div class="row-album-list" >
+            <div class="cl-album" id="album-type-2">
+                <a href="#" class="album-icon"><img src="img/album02.jpg" alt=""></a>
+                <a href="#" class="album-describe">巅峰ing-TA们创造着欧美乐坛新荣耀</a>
+                <div class="album-play-count">
+                    <a href="#" ><img src="img/播放-2.png" alt=""></a>
+                    <label>114万</label>
+                </div>
+            </div>
+            <div class="cl-album" id="album-type-2">
+                <a href="#" class="album-icon"><img src="img/album02.jpg" alt=""></a>
+                <a href="#" class="album-describe">巅峰ing-TA们创造着欧美乐坛新荣耀</a>
+                <div class="album-play-count">
+                    <a href="#" ><img src="img/播放-2.png" alt=""></a>
+                    <label>114万</label>
+                </div>
+            </div>
+            <div class="cl-album" id="album-type-2">
+                <a href="#" class="album-icon"><img src="img/album02.jpg" alt=""></a>
+                <a href="#" class="album-describe">巅峰ing-TA们创造着欧美乐坛新荣耀</a>
+                <div class="album-play-count">
+                    <a href="#" ><img src="img/播放-2.png" alt=""></a>
+                    <label>114万</label>
+                </div>
+            </div>
+            <div class="cl-album" id="album-type-2">
+                <a href="#" class="album-icon"><img src="img/album02.jpg" alt=""></a>
+                <a href="#" class="album-describe">巅峰ing-TA们创造着欧美乐坛新荣耀</a>
+                <div class="album-play-count">
+                    <a href="#" ><img src="img/播放-2.png" alt=""></a>
+                    <label>114万</label>
+                </div>
+            </div>
+            <div class="cl-album" id="album-type-2">
+                <a href="#" class="album-icon"><img src="img/album02.jpg" alt=""></a>
+                <a href="#" class="album-describe">巅峰ing-TA们创造着欧美乐坛新荣耀</a>
+                <div class="album-play-count">
+                    <a href="#" ><img src="img/播放-2.png" alt=""></a>
+                    <label>114万</label>
+                </div>
+            </div>
+        </div>
+        <label id="label-title">飙升榜</label>
+        <div class="row-album-list" >
+            <div class="cl-album" id="album-type-2">
+                <a href="#" class="album-icon"><img src="img/album02.jpg" alt=""></a>
+                <a href="#" class="album-describe">光阴流年，时光从不等任何人长大</a>
+                <div class="album-play-count">
+                    <a href="#" ><img src="img/播放-2.png" alt=""></a>
+                    <label>114万</label>
+                </div>
+            </div>
+            <div class="cl-album" id="album-type-2">
+                <a href="#" class="album-icon"><img src="img/album02.jpg" alt=""></a>
+                <a href="#" class="album-describe">光阴流年，时光从不等任何人长大</a>
+                <div class="album-play-count">
+                    <a href="#" ><img src="img/播放-2.png" alt=""></a>
+                    <label>114万</label>
+                </div>
+            </div>
+            <div class="cl-album" id="album-type-2">
+                <a href="#" class="album-icon"><img src="img/album02.jpg" alt=""></a>
+                <a href="#" class="album-describe">光阴流年，时光从不等任何人长大</a>
+                <div class="album-play-count">
+                    <a href="#" ><img src="img/播放-2.png" alt=""></a>
+                    <label>114万</label>
+                </div>
+            </div>
+            <div class="cl-album" id="album-type-2">
+                <a href="#" class="album-icon"><img src="img/album02.jpg" alt=""></a>
+                <a href="#" class="album-describe">光阴流年，时光从不等任何人长大</a>
+                <div class="album-play-count">
+                    <a href="#" ><img src="img/播放-2.png" alt=""></a>
+                    <label>114万</label>
+                </div>
+            </div>
+            <div class="cl-album" id="album-type-2">
+                <a href="#" class="album-icon"><img src="img/album02.jpg" alt=""></a>
+                <a href="#" class="album-describe">光阴流年，时光从不等任何人长大</a>
+                <div class="album-play-count">
+                    <a href="#" ><img src="img/播放-2.png" alt=""></a>
+                    <label>114万</label>
+                </div>
+            </div>
+        </div>
+        <label id="label-title">收藏榜</label>
+        <div class="row-album-list" >
+            <div class="cl-album" id="album-type-2">
+                <a href="#" class="album-icon"><img src="img/album02.jpg" alt=""></a>
+                <a href="#" class="album-describe">光阴流年，时光从不等任何人长大</a>
+                <div class="album-play-count">
+                    <a href="#" ><img src="img/播放-2.png" alt=""></a>
+                    <label>114万</label>
+                </div>
+            </div>
+            <div class="cl-album" id="album-type-2">
+                <a href="#" class="album-icon"><img src="img/album02.jpg" alt=""></a>
+                <a href="#" class="album-describe">光阴流年，时光从不等任何人长大</a>
+                <div class="album-play-count">
+                    <a href="#" ><img src="img/播放-2.png" alt=""></a>
+                    <label>114万</label>
+                </div>
+            </div>
+            <div class="cl-album" id="album-type-2">
+                <a href="#" class="album-icon"><img src="img/album02.jpg" alt=""></a>
+                <a href="#" class="album-describe">光阴流年，时光从不等任何人长大</a>
+                <div class="album-play-count">
+                    <a href="#" ><img src="img/播放-2.png" alt=""></a>
+                    <label>114万</label>
+                </div>
+            </div>
+            <div class="cl-album" id="album-type-2">
+                <a href="#" class="album-icon"><img src="img/album02.jpg" alt=""></a>
+                <a href="#" class="album-describe">光阴流年，时光从不等任何人长大</a>
+                <div class="album-play-count">
+                    <a href="#" ><img src="img/播放-2.png" alt=""></a>
+                    <label>114万</label>
+                </div>
+            </div>
+            <div class="cl-album" id="album-type-2">
+                <a href="#" class="album-icon"><img src="img/album02.jpg" alt=""></a>
+                <a href="#" class="album-describe">光阴流年，时光从不等任何人长大</a>
+                <div class="album-play-count">
+                    <a href="#" ><img src="img/播放-2.png" alt=""></a>
+                    <label>114万</label>
+                </div>
+            </div>
+        </div>
     </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/06/12/NAND/" data-id="clisdl3vu0000s4uf24keeeis" data-title="NAND" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
 
 
 
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/06/12/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2023-06-12T02:29:05.168Z" itemprop="datePublished">2023-06-12</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/06/12/hello-world/">你好世界</a>
-    </h1>
-  
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>这不是肖某吗. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
+    <!-- 歌手 -->
+    <div class="all-artist-list" id="main_artist">
+        <div id="label-artist">
+            <ul>
+                <li><a href="#" ptr="chinese-artist" class="swa">华语歌手</a></li>
+                <li><a href="#" ptr="JK-artist" class="swa">日韩歌手</a></li>
+                <li><a href="#" ptr="WA-artist" class="swa">欧美歌手</a></li>
+            </ul>
+        </div>
+        <div id="chinese-artist" class="artist">
+            <ul>
+                <li><a href="#"><img src="img/zjl.jpg" alt=""></a></li>
+                <li><a href="#"><span>周杰伦</span></a></li>
+                <li><a href="#"><img src="img/ljj.jpg" alt=""></a></li>
+                <li><a href="#"><span>林俊杰</span></a></li>
+                <li><a href="#"><img src="img/dzq.jpg" alt=""></a></li>
+                <li><a href="#"><span>邓紫棋</span></a></li>
+            </ul>
+            <ul>
+                <li><a href="#"><img src="img/xzq.jpg" alt=""></a></li>
+                <li><a href="#"><span>薛之谦</span></a></li>
+                <li><a href="#"><img src="img/cyx.jpg" alt=""></a></li>
+                <li><a href="#"><span>陈奕迅</span></a></li>
+                <li><a href="#"><img src="img/lrh.jpg" alt=""></a></li>
+                <li><a href="#"><span>李荣浩</span></a></li>
+            </ul>
+            <ul>
+                <li><a href="#"><img src="img/sxj.jpg" alt=""></a></li>
+                <li><a href="#"><span>苏星捷</span></a></li>
+                <li><a href="#"><img src="img/wyt.jpg" alt=""></a></li>
+                <li><a href="#"><span>五月天</span></a></li>
+                <li><a href="#"><img src="img/zj.jpg" alt=""></a></li>
+                <li><a href="#"><span>张杰</span></a></li>
+            </ul>
+        </div>
+            <div id="JK-artist" class="artist">
+                <ul>
+                    <li><a href="#"><img src="img/xzq.jpg" alt=""></a></li>
+                    <li><a href="#"><span>薛之谦</span></a></li>
+                    <li><a href="#"><img src="img/cyx.jpg" alt=""></a></li>
+                    <li><a href="#"><span>陈奕迅</span></a></li>
+                    <li><a href="#"><img src="img/lrh.jpg" alt=""></a></li>
+                    <li><a href="#"><span>李荣浩</span></a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><img src="img/zjl.jpg" alt=""></a></li>
+                    <li><a href="#"><span>周杰伦</span></a></li>
+                    <li><a href="#"><img src="img/ljj.jpg" alt=""></a></li>
+                    <li><a href="#"><span>林俊杰</span></a></li>
+                    <li><a href="#"><img src="img/dzq.jpg" alt=""></a></li>
+                    <li><a href="#"><span>邓紫棋</span></a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><img src="img/sxj.jpg" alt=""></a></li>
+                    <li><a href="#"><span>苏星捷</span></a></li>
+                    <li><a href="#"><img src="img/wyt.jpg" alt=""></a></li>
+                    <li><a href="#"><span>五月天</span></a></li>
+                    <li><a href="#"><img src="img/zj.jpg" alt=""></a></li>
+                    <li><a href="#"><span>张杰</span></a></li>
+                </ul>
+            </div>
+            <div id="WA-artist" class="artist">
+                <ul>
+                    <li><a href="#"><img src="img/sxj.jpg" alt=""></a></li>
+                    <li><a href="#"><span>苏星捷</span></a></li>
+                    <li><a href="#"><img src="img/wyt.jpg" alt=""></a></li>
+                    <li><a href="#"><span>五月天</span></a></li>
+                    <li><a href="#"><img src="img/zj.jpg" alt=""></a></li>
+                    <li><a href="#"><span>张杰</span></a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><img src="img/xzq.jpg" alt=""></a></li>
+                    <li><a href="#"><span>薛之谦</span></a></li>
+                    <li><a href="#"><img src="img/cyx.jpg" alt=""></a></li>
+                    <li><a href="#"><span>陈奕迅</span></a></li>
+                    <li><a href="#"><img src="img/lrh.jpg" alt=""></a></li>
+                    <li><a href="#"><span>李荣浩</span></a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><img src="img/zjl.jpg" alt=""></a></li>
+                    <li><a href="#"><span>周杰伦</span></a></li>
+                    <li><a href="#"><img src="img/ljj.jpg" alt=""></a></li>
+                    <li><a href="#"><span>林俊杰</span></a></li>
+                    <li><a href="#"><img src="img/dzq.jpg" alt=""></a></li>
+                    <li><a href="#"><span>邓紫棋</span></a></li>
+                </ul>
+            </div>
     </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/06/12/hello-world/" data-id="clisdl3w80002s4uf4df7dg9s" data-title="你好世界" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
 
 
 
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/06/">June 2023</a></li></ul>
+    <!-- 音频控制栏 -->
+    <div class="play-bar" id="plb">
+        <label id="cb-artist">artist</label>
+        <label id="audio-start">--:--</label>
+        <div class="control-bar">
+            <a href="#"><img id="icon-last-song" src="img/上一首-2.png" alt=""></a>
+            <a href="#" id="play-control"><img id="icon-paly" src="img/播放.png" alt=""><img id="roa-play" src="img/播放-3.png"></a>
+            <a href="#"><img id="icon-next-song" src="img/下一首-2.png" alt=""></a>
+        </div>
+        <div class="song-info">
+            <!-- <a href="#"><img id="artist-photo" src="" alt=""></a> -->
+            <div id="s-area">
+                <div id="total-timeline"></div>
+                <div id="infor-timeline"></div>
+                <div id="hover-timeline"></div>
+                <div id="cur-timeline"></div>
+            </div>
+        </div>
+        <label id="audio-end">--:--</label>
+        <label id="cb-song-name">song-name</label>
     </div>
-  </div>
 
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2023/06/12/hello-world-1/">hello world</a>
-          </li>
-        
-          <li>
-            <a href="/2023/06/12/NAND/">NAND</a>
-          </li>
-        
-          <li>
-            <a href="/2023/06/12/hello-world/">你好世界</a>
-          </li>
-        
-      </ul>
+
+
+    <!-- mv栏 -->
+    <div id="mv-list">
+        <label id="label-title">MV</label>
+        <div id="label-MV">
+            <ul>
+                <li><label>区域</label></li>
+                <li><a href="#">全部</a></li>
+                <li><a href="#">大陆</a></li>
+                <li><a href="#">港台</a></li>
+                <li><a href="#">欧美</a></li>
+                <li><a href="#">日韩</a></li>
+            </ul>
+        </div>
+        <div class="row-album-list" id="col-mv-list">
+            <div class="cl-album" id="album-type-2">
+                <a href="#" class="album-icon"><img src="img/MV-01.jpg" alt=""></a>
+                <a href="#" class="album-describe">La Marimorena (Cover Audio)</a>
+            </div>
+            <div class="cl-album" id="album-type-2">
+                <a href="#" class="album-icon"><img src="img/MV-01.jpg" alt=""></a>
+                <a href="#" class="album-describe">La Marimorena (Cover Audio)</a>
+            </div>
+            <div class="cl-album" id="album-type-2">
+                <a href="#" class="album-icon"><img src="img/MV-01.jpg" alt=""></a>
+                <a href="#" class="album-describe">La Marimorena (Cover Audio)</a>
+            </div>
+            <div class="cl-album" id="album-type-2">
+                <a href="#" class="album-icon"><img src="img/MV-01.jpg" alt=""></a>
+                <a href="#" class="album-describe">La Marimorena (Cover Audio)</a>
+            </div>
+        </div>
+        <div class="row-album-list" id="col-mv-list">
+            <div class="cl-album" id="album-type-2">
+                <a href="#" class="album-icon"><img src="img/MV-01.jpg" alt=""></a>
+                <a href="#" class="album-describe">La Marimorena (Cover Audio)</a>
+            </div>
+            <div class="cl-album" id="album-type-2">
+                <a href="#" class="album-icon"><img src="img/MV-01.jpg" alt=""></a>
+                <a href="#" class="album-describe">La Marimorena (Cover Audio)</a>
+            </div>
+            <div class="cl-album" id="album-type-2">
+                <a href="#" class="album-icon"><img src="img/MV-01.jpg" alt=""></a>
+                <a href="#" class="album-describe">La Marimorena (Cover Audio)</a>
+            </div>
+            <div class="cl-album" id="album-type-2">
+                <a href="#" class="album-icon"><img src="img/MV-01.jpg" alt=""></a>
+                <a href="#" class="album-describe">La Marimorena (Cover Audio)</a>
+            </div>
+        </div>
+        <div class="row-album-list" id="col-mv-list">
+            <div class="cl-album" id="album-type-2">
+                <a href="#" class="album-icon"><img src="img/MV-01.jpg" alt=""></a>
+                <a href="#" class="album-describe">La Marimorena (Cover Audio)</a>
+            </div>
+            <div class="cl-album" id="album-type-2">
+                <a href="#" class="album-icon"><img src="img/MV-01.jpg" alt=""></a>
+                <a href="#" class="album-describe">La Marimorena (Cover Audio)</a>
+            </div>
+            <div class="cl-album" id="album-type-2">
+                <a href="#" class="album-icon"><img src="img/MV-01.jpg" alt=""></a>
+                <a href="#" class="album-describe">La Marimorena (Cover Audio)</a>
+            </div>
+            <div class="cl-album" id="album-type-2">
+                <a href="#" class="album-icon"><img src="img/MV-01.jpg" alt=""></a>
+                <a href="#" class="album-describe">La Marimorena (Cover Audio)</a>
+            </div>
+        </div>
     </div>
-  </div>
 
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2023 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+
+    <!-- 专辑 -->
+    <div class="all-artist-list" id="album">
+        <div id="label-album">
+            <ul>
+                <li><a href="#">华语</a></li>
+                <li><a href="#">日韩</a></li>
+                <li><a href="#">欧美</a></li>
+            </ul>
+        </div>
+        <div class="album-list">
+            <div id="" class="album">
+                <ul>
+                    <li><a href="#"><img src="img/album.jpg" alt=""></a></li>
+                    <li id="describe-album"><a href="#" ><label id="">月光，背影与海<br/>发行时间：2022.22.33</label></a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><img src="img/album.jpg" alt=""></a></li>
+                    <li id="describe-album"><a href="#" ><label id="">月光，背影与海<br/>发行时间：2022.22.33</label></a></li>
+                </ul>
+            </div>
+            <div id="" class="album">
+                <ul>
+                    <li><a href="#"><img src="img/album.jpg" alt=""></a></li>
+                    <li id="describe-album"><a href="#" ><label id="">月光，背影与海<br/>发行时间：2022.22.33</label></a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><img src="img/album.jpg" alt=""></a></li>
+                    <li id="describe-album"><a href="#" ><label id="">月光，背影与海<br/>发行时间：2022.22.33</label></a></li>
+                </ul>
+            </div>
+            <div id="" class="album">
+                <ul>
+                    <li><a href="#"><img src="img/album.jpg" alt=""></a></li>
+                    <li id="describe-album"><a href="#" ><label id="">月光，背影与海<br/>发行时间：2022.22.33</label></a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><img src="img/album.jpg" alt=""></a></li>
+                    <li id="describe-album"><a href="#" ><label id="">月光，背影与海<br/>发行时间：2022.22.33</label></a></li>
+                </ul>
+            </div>
+
+        </div>
     </div>
-  </div>
-</footer>
 
+
+
+
+    <!-- 底部栏 -->
+	<div class="foot">
+        <div class="page-head">
+            <div class="download">
+                <div class="explain">
+                    <span>客户端下载</span>
+                </div>
+                <div class="download-link">
+                    <div class="PC">
+                        <a href="#"><img src="img/pc.png" alt="PC版" title="点击下载PC版"></a>
+                            <br>
+                        <span>PC版</span>
+                    </div>
+                    <div class="Mac">
+                        <a href="#"><img src="img/mac.png" alt="Mac版" title="点击下载Mac版"></a>
+                            <br>
+                        <span>Mac版</span>
+                    </div>
+                    <div class="Android">
+                        <a href="#"><img src="img/android.png" alt="Android版" title="点击下载Android版"></a>
+                            <br>
+                        <span>Android版</span>
+                    </div>
+                    <div class="iPhone"> 
+                        <a href="#"><img src="img/iphone.png" alt="iPhone版" title="点击下载iPhone版"></a>
+                            <br>
+                        <span>iPhone版</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="friend">
+                <div class="explain">
+                    <span>友情链接</span>
+                </div>
+                <div class="friend-link">
+                    <div class="left">
+                        <ul>
+                            <li><a href="#">QQ音乐</a></li>
+                            <li><a href="#">酷狗音乐</a></li>
+                            <li><a href="#">网易云音乐</a></li>
+                        </ul>
+                    </div>
+                    <div class="mid">
+                        <ul>
+                            <li><a href="#">华为官网</a></li>
+                            <li><a href="#">一加官网</a></li>
+                            <li><a href="#">小米官网</a></li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <ul>
+                            <li><a href="#">华为云</a></li>
+                            <li><a href="#">阿里云</a></li>
+                            <li><a href="#">天翼云</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about">
+            <span class="last">
+                关于本站 | 服务条款 | 用户服务协议 | 隐私政策 | 广告服务 | 招聘信息 | 客服中心 | 网站导航
+            </span>
+                <br>
+            <span class="last">
+                Copyright  1998 - 2022 . All Rights Reserved.
+            </span>
+                <br>
+            <span class="last">
+                XX公司©版权所有 XX网络文化经营许可证
+            </span>
+        </div>
+	</div>
+
+    <!-- 登录 -->
+    <div id="login">
+        <div class="box" >
+            <a href="#"><span id="close-login" class="close">X</span></a>
+            <h2 id="hid">Login</h2>
+            <div class="input-box">
+                <label id="accl">账号</label>
+                <input id="acc" type="text"/>
+            </div>
+            <div class="input-box">
+                <label id="pasl">密码</label>
+                <input id="pass" type="password"/>
+            </div>
+            <div class="input-box">
+                <label id="pas-al">再次输入密码</label>
+                <input id="pass-l" type="password"/>
+            </div>
+            <div class="input-box">
+                <label id="nick">输入昵称</label>
+                <input id="nick-name" type="text"/>
+            </div>
+            <div class="btn-box">
+                <a href="#" id="fora">忘记密码?</a>
+                <div>
+                    <button id="ent-login">登录</button>
+                    <button id="ent-rigister">注册</button>
+                </div>
+            </div>
+        </div>
     </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
 
+    <div id="result">
+        <div class="box">
+            <span id="r-r">✔</span>
+            <span id="r-w">X</span>
+            <a href="#" id="ri"><span id="r-i">成功?</span></a>
+        </div>
+    </div>
 
-<script src="/js/jquery-3.6.4.min.js"></script>
+    <div id="result-2">
+        <div class="box">
+            <a href="#"><span id="close-list" class="close">X</span></a>
+            <label id="r-t-2">标题</label>
+            <div id="list-1" s>
+                <div id="list-n" class="list_n">
+                    <a href="#"><img src="img/播放-4.png" alt="" id="s-b-f"></a>
+                    <a href="#"><label id="r-s-n">song-name</label></a>
+                    <a href="#"><label id="r-s-d">duration</label></a>
+                </div>
+                <div id="list-n" class="list_n">
+                    <a href="#"><img src="img/播放-4.png" alt="" id="s-b-f"></a>
+                    <a href="#"><label id="r-s-n">song-name</label></a>
+                    <a href="#"><label id="r-s-d">duration</label></a>
+                </div>
+                <div id="list-n" class="list_n">
+                    <a href="#"><img src="img/播放-4.png" alt="" id="s-b-f"></a>
+                    <a href="#"><label id="r-s-n">song-name</label></a>
+                    <a href="#"><label id="r-s-d">duration</label></a>
+                </div>
+                <div id="list-n" class="list_n">
+                    <a href="#"><img src="img/播放-4.png" alt="" id="s-b-f"></a>
+                    <a href="#"><label id="r-s-n">song-name</label></a>
+                    <a href="#"><label id="r-s-d">duration</label></a>
+                </div>
+                <div id="list-n" class="list_n">
+                    <a href="#"><img src="img/播放-4.png" alt="" id="s-b-f"></a>
+                    <a href="#"><label id="r-s-n">song-name</label></a>
+                    <a href="#"><label id="r-s-d">duration</label></a>
+                </div>
+                <div id="list-n" class="list_n">
+                    <a href="#"><img src="img/播放-4.png" alt="" id="s-b-f"></a>
+                    <a href="#"><label id="r-s-n">song-name</label></a>
+                    <a href="#"><label id="r-s-d">duration</label></a>
+                </div>
+                <div id="list-n" class="list_n">
+                    <a href="#"><img src="img/播放-4.png" alt="" id="s-b-f"></a>
+                    <a href="#"><label id="r-s-n">song-name</label></a>
+                    <a href="#"><label id="r-s-d">duration</label></a>
+                </div>
+                <div id="list-n" class="list_n">
+                    <a href="#"><img src="img/播放-4.png" alt="" id="s-b-f"></a>
+                    <a href="#"><label id="r-s-n">song-name</label></a>
+                    <a href="#"><label id="r-s-d">duration</label></a>
+                </div>
+                <div id="list-n" class="list_n">
+                    <a href="#"><img src="img/播放-4.png" alt="" id="s-b-f"></a>
+                    <a href="#"><label id="r-s-n">song-name</label></a>
+                    <a href="#"><label id="r-s-d">duration</label></a>
+                </div>
+                <div id="list-n" class="list_n">
+                    <a href="#"><img src="img/播放-4.png" alt="" id="s-b-f"></a>
+                    <a href="#"><label id="r-s-n">song-name</label></a>
+                    <a href="#"><label id="r-s-d">duration</label></a>
+                </div>
+                <div id="list-n" class="list_n">
+                    <a href="#"><img src="img/播放-4.png" alt="" id="s-b-f"></a>
+                    <a href="#"><label id="r-s-n">song-name</label></a>
+                    <a href="#"><label id="r-s-d">duration</label></a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-
-
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-
-  </div>
 </body>
+
+<script type="text/javascript" src="js/tool.js"></script>
+<script type="text/javascript" src="js/control-bar.js"></script>
+<script type="text/javascript" src="js/search_bar.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+
+<script type="text/javascript">
+    
+
+    // 导航栏
+    var nav=document.getElementsByClassName("nav_checked");
+
+    var hr_sw = {
+        0: "main_page",
+        1: "main_artist",
+        2: "album",
+        3: "hot-album-list",
+        4: "mv-list",
+    } 
+
+    nav[0].self = nav[0].style.display
+
+    for (var i=1; i<nav.length; ++i){
+        document.getElementById(hr_sw[i]).style.display = "none"
+        nav[i].self = nav[i].style.display
+    }
+
+    nav[0].setAttribute("aria-checked", "true")
+    nav[0].setAttribute("style","color: white;background-color:rgba(2, 104, 247, 0.5)")
+
+    for (var i=0; i<nav.length; ++i){
+        nav[i].addEventListener('click',function(e){
+            for (var i=0; i<nav.length; ++i){
+                if (nav[i].getAttribute("aria-checked") == "true"){
+
+                    nav[i].setAttribute("aria-checked", "false")
+                    nav[i].setAttribute("style","color: rgb(0, 132, 255);background-color:none")
+
+                    document.getElementById(nav[i].getAttribute("ptr")).style.display = "none"
+                    break
+                }
+            }
+
+            document.getElementById(this.getAttribute("ptr")).style.display = this.self
+            this.setAttribute("aria-checked", "true")
+            this.setAttribute("style","color: white;background-color:rgba(2, 104, 247, 0.5)")
+        })
+    }
+
+    var env_href_artist = document.getElementsByClassName("swa")
+
+    env_href_artist[0].setAttribute("aria-checked", "true")
+    env_href_artist[0].setAttribute("style","color: white;background-color:rgba(2, 104, 247, 0.5)")
+
+    var display_status = env_href_artist[0].style.display
+
+    env_env_href_artist_t = document.getElementsByClassName("artist")
+
+    for (var i=1;i<env_href_artist.length;++i){
+        env_env_href_artist_t[i].style.display = "none"
+    }
+
+    
+    for (var i=0;i<env_href_artist.length;++i){
+            env_href_artist[i].addEventListener('click',function (event){
+                for (var i=0; i<env_href_artist.length; ++i){
+                    if (env_href_artist[i].getAttribute("aria-checked") == "true"){
+
+                    env_href_artist[i].setAttribute("aria-checked", "false")
+                    env_href_artist[i].setAttribute("style","color: black;background-color:none")
+
+                    document.getElementById(env_href_artist[i].getAttribute("ptr")).style.display = "none"
+                    break
+                }
+            }
+
+            document.getElementById(this.getAttribute("ptr")).style.display = display_status
+            this.setAttribute("aria-checked", "true")
+            this.setAttribute("style","color: white;background-color:rgba(2, 104, 247, 0.5)")
+        })
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
 </html>

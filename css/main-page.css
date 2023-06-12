@@ -1,0 +1,193 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.3s ease all;
+    text-decoration: none;
+}
+
+#main_page {
+
+    height: 1800px;
+    display: flex;
+    align-items: center;
+    background-color:rgba(147, 147, 147, 0.488);
+    flex-direction: column;
+}
+
+#label-title {
+    height: 50px;
+    width: 300px;
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+}
+.row-album-list {
+
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: 500px;
+    background-color: rgba(0, 123, 255, 0.1);
+    /* flex-direction: row; */
+}
+
+.cl-album {
+
+    width: 250px;
+    height: 350px;
+    margin: 20px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    border-radius: 5px;
+    flex-direction: column;
+    background-color: rgba(51, 51, 51, 0.69);
+    margin: 20px;
+
+}
+
+.album-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 220px;
+    margin: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.album-icon > img {
+    width: 220px;
+    height: 220px;
+}
+
+.album-describe {
+    /* width: 280px; */
+    height: 50px;
+    text-align: center;
+    letter-spacing: 2px;
+    display: flex;
+    color: aliceblue;
+    align-items: center;
+    border-radius: 3px;
+    margin: 5px 15px;
+    background-color: rgba(162, 162, 171, 0);
+    font-size: 15px;
+}
+
+.album-play-count {
+    width: 220px;
+    background-color: rgba(222, 184, 135, 0);
+    height: 50px;
+
+    margin: 5px auto;
+    border-radius: 3px;
+
+    display: flex;
+    align-items:center;
+
+}
+
+.album-play-count > a {
+    height: 30px;
+    width: 30px;
+    border-radius: 3px;
+
+    margin: auto 5px;
+    background-color: rgba(99, 154, 217, 0);
+}
+
+.album-play-count > a > img {
+    width: 30px;
+    height: 30px;    
+}
+
+.album-play-count > label {
+    height: 30px;
+    border-radius: 5px;
+    font-size: 12px;
+
+    text-align:left;
+    display: flex;
+    color: aliceblue;
+    align-items:center;
+    background-color: rgba(0, 100, 0, 0);
+}
+
+.cl-album:hover {
+    background-color: rgba(51, 51, 51, 0.938);
+    /* box-shadow:rgba(67, 67, 67, 0.852) */
+}
+
+.cl-album:hover > .album-icon {
+    border-radius: 15px;
+}
+
+.cl-album:hover > .album-icon > img {
+    width: 235px;
+    height: 235px;
+}
+
+.row-artist-list {
+
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: 400px;
+    background-color: rgba(0, 123, 255, 0.1);
+    /* flex-direction: row; */
+}
+
+.cl-artist {
+    width: 270px;
+    height: 300px;
+    float: left;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cl-artist > a > img {
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+
+}
+.cl-artist > #artist-name {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.cl-artist > a > label {
+    background-color: rgba(13, 60, 102, 0);
+    font-size: 20px;
+    color: black;
+}
+
+.cl-artist:hover {
+    border-radius: 30px;
+    background-color: rgba(51, 51, 51, 0.068);
+}
+
+.cl-artist > a > img:hover{
+    border: 3px solid rgba(0, 174, 255, 0.449);
+}
+
