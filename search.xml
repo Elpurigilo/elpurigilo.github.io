@@ -3,17 +3,13 @@
   <entry>
     <title>NAND</title>
     <url>/2023/06/12/NAND/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>ggg</title>
-    <url>/2023/06/15/ggg/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>hello world</title>
-    <url>/2023/06/12/hello-world-1/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<p>This is my website, click the button <a class="btn-beautify " href="https://butterfly.js.org/" 
+  title="Butterfly"><span>Butterfly</span></a><br>This is my website, click the button <a class="btn-beautify " href="https://butterfly.js.org/" 
+  title="Butterfly"><i class="far fa-hand-point-right"></i><span>Butterfly</span></a><br>This is my website, click the button <a class="btn-beautify outline" href="https://butterfly.js.org/" 
+  title="Butterfly"><span>Butterfly</span></a><br>This is my website, click the button <a class="btn-beautify outline" href="https://butterfly.js.org/" 
+  title="Butterfly"><i class="far fa-hand-point-right"></i><span>Butterfly</span></a><br>This is my website, click the button <a class="btn-beautify larger" href="https://butterfly.js.org/" 
+  title="Butterfly"><i class="far fa-hand-point-right"></i><span>Butterfly</span></a></p>
+]]></content>
   </entry>
   <entry>
     <title>测试文章</title>
@@ -33,6 +29,25 @@
 <div class="note green icon-padding simple"><i class="note-icon fab fa-internet-explorer"></i><p>前端最討厭的瀏覽器</p>
 </div>
 ]]></content>
+  </entry>
+  <entry>
+    <title>ggg</title>
+    <url>/2023/06/15/ggg/</url>
+    <content><![CDATA[<div class="note [class] [no-icon] [style] flat"><p>Any content (support inline tags too.io).</p>
+</div>
+
+<p>This is my website, click the button <a class="btn-beautify " href="https://butterfly.js.org/" 
+  title="Butterfly"><span>Butterfly</span></a><br>This is my website, click the button <a class="btn-beautify " href="https://butterfly.js.org/" 
+  title="Butterfly"><i class="far fa-hand-point-right"></i><span>Butterfly</span></a><br>This is my website, click the button <a class="btn-beautify outline" href="https://butterfly.js.org/" 
+  title="Butterfly"><span>Butterfly</span></a><br>This is my website, click the button <a class="btn-beautify outline" href="https://butterfly.js.org/" 
+  title="Butterfly"><i class="far fa-hand-point-right"></i><span>Butterfly</span></a><br>This is my website, click the button <a class="btn-beautify larger" href="https://butterfly.js.org/" 
+  title="Butterfly"><i class="far fa-hand-point-right"></i><span>Butterfly</span></a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>hello world</title>
+    <url>/2023/06/12/hello-world-1/</url>
+    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>你好世界</title>
